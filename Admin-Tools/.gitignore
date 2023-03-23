@@ -1,5 +1,7 @@
 /.phpunit.cache
 /node_modules
+/config/database.php
+.env
 .phpunit.result.cache
 Homestead.json
 Homestead.yaml
