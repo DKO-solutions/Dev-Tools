@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PagesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,4 +32,11 @@ Route::controller(AuthController::class)->group(function (){
 
 Route::controller(HomeController::class)->group(function (){
     Route::get('/dashboard', 'index')->middleware('admin');
+});
+
+Route::controller(PagesController::class)->group(function (){
+    Route::get('/knpc', 'kNPC_view')->middleware('admin');
+    Route::get('/test', 'test')->middleware('admin');
+    //Route::get('/knpc/edit', 'kNPC_edit')->middleware('admin');
+    //Route::get('/knpc/delete', 'kNPC_delete')->middleware('admin');
 });
