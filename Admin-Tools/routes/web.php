@@ -35,8 +35,8 @@ Route::controller(HomeController::class)->group(function (){
 });
 
 Route::controller(PagesController::class)->group(function (){
-    Route::get('/knpc', 'kNPC_view')->middleware('admin');
+    Route::get('/knpc', 'kbpc_view')->middleware('admin');
     Route::get('/test', 'test')->middleware('admin');
-    //Route::get('/knpc/edit', 'kNPC_edit')->middleware('admin');
-    //Route::get('/knpc/delete', 'kNPC_delete')->middleware('admin');
+    Route::get('/knpc/edit/{id}', 'knpc_edit')->middleware('admin');
+    Route::post('/knpc/update/{id}', 'knpc_update')->middleware('admin')->name('test.edit');;
 });

@@ -11,6 +11,13 @@
                 search: "",
                 searchPlaceholder: "Search..."
             },
+            columnDefs: [
+                // Center align the headers
+                {
+                    className: "dt-head-center",
+                    targets: [0, 1, 2, 3]
+                },
+            ],
             dom: 'Blfrtip',
             buttons: [{
                     extend: 'excelHtml5',
