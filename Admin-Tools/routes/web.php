@@ -15,10 +15,10 @@ use App\Http\Controllers\PagesController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
+/*
 Route::get('/', function () {
     return view('welcome');
-});
+});*/
 
 Route::controller(AuthController::class)->group(function (){
     Route::get('/pin', 'pin');
@@ -31,7 +31,7 @@ Route::controller(AuthController::class)->group(function (){
 });
 
 Route::controller(HomeController::class)->group(function (){
-    Route::get('/dashboard', 'index')->middleware('admin');
+    Route::get('/', 'index')->middleware('admin');
 });
 
 Route::controller(PagesController::class)->group(function (){
