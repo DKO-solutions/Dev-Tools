@@ -25,6 +25,20 @@ class PagesController extends Controller
         return view('pages.npc-view', $data);
     }
 
+    public function knpc_create()
+    {
+        return view('pages.npc-create');
+    }
+
+    public function knpc_store(StoreNpcRequest $request)
+    {
+        $data = $request->validated();
+
+        kNPC::create($data);
+
+        return redirect('/npc')->with('test', 'NPC has been created!');
+    }
+
     public function knpc_edit($id)
     {
         $data = [
@@ -42,7 +56,7 @@ class PagesController extends Controller
             ->where('id', $id)
             ->update($data);
     
-        return redirect("/knpc/edit/{$id}")->with('test', 'NPC has been updated!');
+        return redirect("/npc/edit/{$id}")->with('test', 'NPC has been updated!');
     }
 
 }

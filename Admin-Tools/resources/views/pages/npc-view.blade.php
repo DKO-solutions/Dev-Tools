@@ -5,6 +5,12 @@
     <div class="container-fluid">
         <div class="row justify-content-center" style="margin-bottom: 1em; margin-top: 1em;">
             <div class="col-sm-8">
+                @csrf
+                @if (Session::has('test'))
+                <div class="alert alert-success" role="alert">
+                    {{ Session::get('test') }}
+                </div>
+                @endif
                 <table id="myTable" class="table table-dark table-striped table-hover">
                     <thead>
                         <tr>
@@ -28,7 +34,7 @@
                                         </a>
                                         <ul class="dropdownTD-content">
                                             <li class="nav-item"><a class="nav-link dropdownTD-edit" data-bss-hover-animate="rubberBand" href="#">View</a></li>
-                                            <li class="nav-item"><a class="nav-link dropdownTD-edit" data-bss-hover-animate="rubberBand" href="/knpc/edit/{{$npc->id}}">Edit</a></li>
+                                            <li class="nav-item"><a class="nav-link dropdownTD-edit" data-bss-hover-animate="rubberBand" href="/npc/edit/{{$npc->id}}">Edit</a></li>
                                             <li class="nav-item"><a class="nav-link dropdownTD-delete" data-bss-hover-animate="rubberBand" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">Delete</a></li>
                                         </ul>
                                     </li>

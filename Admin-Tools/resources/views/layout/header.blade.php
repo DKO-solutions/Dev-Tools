@@ -27,7 +27,8 @@
             NPCs
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="/knpc">Find NPC</a></li>
+            <li><a class="dropdown-item" href="/npc">Find NPC</a></li>
+            <li><a class="dropdown-item" href="/npc/create">Create NPC</a></li>
           </ul>
         </li>
         <li class="nav-item">

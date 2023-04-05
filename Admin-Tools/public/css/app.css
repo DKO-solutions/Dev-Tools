@@ -1,128 +1,147 @@
 .dataTables_filter input {
-    height: 2em;
-    width: 10em;
-    margin-bottom: 1em;
-    border: 2px solid;
+  height: 2em;
+  width: 10em;
+  margin-bottom: 1em;
+  border: 2px solid;
 }
 
-button.dt-button, div.dt-button, a.dt-button, input.dt-button {
-    border-radius: 3px;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.75);
-    padding-left: 5px;
-    padding-right: 5px;
-    border: none;
-    margin-bottom: .5em;
+button.dt-button,
+div.dt-button,
+a.dt-button,
+input.dt-button {
+  border-radius: 3px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.75);
+  padding-left: 5px;
+  padding-right: 5px;
+  border: none;
+  margin-bottom: .5em;
 
 }
 
-button.dt-button:hover, div.dt-button:hover, a.dt-button:hover, input.dt-button:hover {
-    background-color: #595959;
-    color: white;
+button.dt-button:hover,
+div.dt-button:hover,
+a.dt-button:hover,
+input.dt-button:hover {
+  background-color: #595959;
+  color: white;
 }
 
 .dropbtnTD {
-    color: white;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  
-  .dropdownTD {
-    position: relative;
-    display: inline-block;
-    color: black;
-  }
-  
-  icon-bar{
-   color: rgba(128, 128, 128, 0.788);
-  }
-  .icon-cog {
-    color: rgba(128, 128, 128, 0.788);
-    margin-right: 2em;
-  }
-  
-  .icon-cog:hover {
-    color: #595959;
-  }
-  
-  .dropdownTD-content {
-    display: none;
-    position: absolute;
-    margin-top: -2em;
-    margin-left: 1em;
-    background-color: #f9f9f9;
-    min-width: 50px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    z-index: 1;
-  }
-  
-  .dropdownTD-content li {
-    list-style-type: none;
-    margin-left: -2em;
-    padding-left: 0;
-  }
-  
-  .dropdownTD-edit {
-    color: rgba(3, 118, 216, 0.74);
-  }
-  
-  .dropdownTD-edit:hover {
-    color: rgba(3, 118, 216, 1);
-  }
-  
-  .dropdownTD-delete {
-    color: rgba(216, 47, 3, 0.74);
-  }
-  
-  .dropdownTD-delete:hover {
-    color: rgba(216, 47, 3, 1);
-  }
-  
-  .dropdownTD-content a {
-    padding: 2px 16px;
-    text-decoration: none;
-    display: block;
-    list-style-type: none;
-  }
-  
-  .dropdownTD:hover .dropdownTD-content {
-    display: block;
-  }
-  
-  .btn-TD {
-    background-color: #4e73df;
-    color: white;
-    border: none;
-    padding: 1px 16px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 18px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-  
-  .btn-TD:hover {
-    background-color: #4262be;
-    color: white;
-  }
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
 
-  /* custom bootstrap */
 
-  .logout {
-    color: red;
-  }
-  .card-header {
-    background-color: #05060784;
-    color: white;
-    box-shadow: #05060784;
-  }
+.dropdownTD {
+  position: relative;
+  display: inline-block;
+  color: black;
+}
 
-  .card-body {
-    color: white;
-    box-shadow: #05060784;
-  }
+icon-bar {
+  color: rgba(128, 128, 128, 0.788);
+}
+
+.icon-cog {
+  color: rgba(128, 128, 128, 0.788);
+  margin-right: 2em;
+}
+
+.icon-cog:hover {
+  color: #595959;
+}
+
+.dropdownTD-content {
+  display: none;
+  position: absolute;
+  margin-top: -2em;
+  margin-left: 1em;
+  background-color: #f9f9f9;
+  min-width: 50px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.dropdownTD-content li {
+  list-style-type: none;
+  margin-left: -2em;
+  padding-left: 0;
+}
+
+.dropdownTD-edit {
+  color: rgba(3, 118, 216, 0.74);
+}
+
+.dropdownTD-edit:hover {
+  color: rgba(3, 118, 216, 1);
+}
+
+.dropdownTD-delete {
+  color: rgba(216, 47, 3, 0.74);
+}
+
+.dropdownTD-delete:hover {
+  color: rgba(216, 47, 3, 1);
+}
+
+.dropdownTD-content a {
+  padding: 2px 16px;
+  text-decoration: none;
+  display: block;
+  list-style-type: none;
+}
+
+.dropdownTD:hover .dropdownTD-content {
+  display: block;
+}
+
+.btn-TD {
+  background-color: #4e73df;
+  color: white;
+  border: none;
+  padding: 1px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn-TD:hover {
+  background-color: #4262be;
+  color: white;
+}
+
+/* custom bootstrap */
+
+.logout {
+  color: red;
+}
+
+.card-header {
+  background-color: #05060784;
+  color: white;
+  box-shadow: #05060784;
+}
+
+.card-body {
+  color: white;
+  box-shadow: #05060784;
+}
+
+input,
+label {
+  display: block;
+}
+
+label {
+  color:rgba(33, 33, 33, 0.784);
+  text-align: center;
+  font-size: 12px;
+}
