@@ -14,18 +14,18 @@
                 <table id="myTable" class="table table-dark table-striped table-hover">
                     <thead>
                         <tr>
-                            <th class="text-center">sSid</th>
-                            <th>strName</th>
-                            <th>SpawnCount</th>
+                            <th class="text-center">Zone #</th>
+                            <th>Name</th>
+                            <th>NPC ID</th>
                             <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach ($knpc as $npc)
+                        @foreach ($npcpos as $pos)
                         <tr class="text-center">
-                            <td>{{ $npc->sSid }}</td>
-                            <td>{{ $npc->strName }}</td>
-                            <td>{{ $npc->SpawnCount }}</td>
+                            <td>{{ $pos->ZoneID }}</td>
+                            <td>{{ $pos->monstername}}</td>
+                            <td>{{ $pos->NpcID }}</td>
                             <td>
                                 <ul>
                                     <li class="nav-item dropdownTD">
@@ -34,8 +34,8 @@
                                         </a>
                                         <ul class="dropdownTD-content">
                                             <li class="nav-item"><a class="nav-link dropdownTD-edit" data-bss-hover-animate="rubberBand" href="#">View</a></li>
-                                            <li class="nav-item"><a class="nav-link dropdownTD-edit" data-bss-hover-animate="rubberBand" href="/npc/edit/{{$npc->id}}">Edit</a></li>
-                                            <li class="nav-item"><a class="nav-link dropdownTD-delete" data-bss-hover-animate="rubberBand" data-bs-toggle="modal" data-bs-target="#exampleModal" href="/npc/delete/{{$npc->id}}">Delete</a></li>
+                                            <li class="nav-item"><a class="nav-link dropdownTD-edit" data-bss-hover-animate="rubberBand" href="/pos/edit/{{$pos->id}}">Edit</a></li>
+                                            <li class="nav-item"><a class="nav-link dropdownTD-delete" data-bss-hover-animate="rubberBand" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">Delete</a></li>
                                         </ul>
                                         <!-- Modal -->
                                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -49,8 +49,8 @@
                                                         Are you sure that you want to delete this item?
                                                     </div>
                                                     <div class="modal-footer">
-                                                        <a class="btn btn-danger" style="margin-right: 75%;" href="/npc/delete/{{$npc->id}}">Yes</a>
-                                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" >No</button>
+                                                    <a class="btn btn-danger" href="/pos/delete/{{$pos->id}}" style="margin-right: 75%;">Yes</a>
+                                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">No</button>
                                                     </div>
                                                 </div>
                                             </div>

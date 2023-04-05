@@ -35,10 +35,23 @@ Route::controller(HomeController::class)->group(function (){
 });
 
 Route::controller(PagesController::class)->group(function (){
-    Route::get('/npc', 'knpc_view')->middleware('admin');
+    Route::get('/npc', 'npc_view')->middleware('admin');
     Route::get('/test', 'test')->middleware('admin');
-    Route::get('/npc/edit/{id}', 'knpc_edit')->middleware('admin');
-    Route::post('/npc/update/{id}', 'knpc_update')->middleware('admin')->name('test.edit');
-    Route::get('/npc/create', 'knpc_create')->middleware('admin');
-    Route::post('/npc/store', 'knpc_store')->middleware('admin')->name('npc.store');
+    Route::get('/npc/edit/{id}', 'npc_edit')->middleware('admin');
+    Route::post('/npc/update/{id}', 'npc_update')->middleware('admin')->name('npc.edit');
+    Route::get('/npc/create', 'npc_create')->middleware('admin');
+    Route::post('/npc/store', 'npc_store')->middleware('admin')->name('npc.store');
+    Route::get('/npc/delete/{id}', 'npc_delete')->middleware('admin');
+    Route::get('/mob', 'mob_view')->middleware('admin');
+    Route::get('/mob/edit/{id}', 'mob_edit')->middleware('admin');
+    Route::post('/mob/update/{id}', 'mob_update')->middleware('admin')->name('mob.edit');
+    Route::get('/mob/create', 'mob_create')->middleware('admin');
+    Route::post('/mob/store', 'mob_store')->middleware('admin')->name('mob.store');
+    Route::get('/mob/delete/{id}', 'mob_delete')->middleware('admin');
+    Route::get('/pos', 'npcpos_view')->middleware('admin');
+    Route::get('/pos/create', 'npcpos_create')->middleware('admin');
+    Route::post('/pos/store', 'npcpos_store')->middleware('admin')->name('pos.store');
+    Route::get('/pos/edit/{id}', 'npcpos_edit')->middleware('admin');
+    Route::Post('/pos/update/{id}', 'npcpos_update')->middleware('admin')->name('pos.edit');
+    Route::get('/pos/delete/{id}', 'npcpos_delete')->middleware('admin');
 });

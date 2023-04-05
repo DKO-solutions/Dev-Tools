@@ -15,7 +15,7 @@
                         NPC Create
                     </div>
                     <div class="card-body">
-                        <form action="{{ route('npc.store') }}" method="post">
+                        <form action="{{ route('mob.store') }}" method="post">
                             @csrf
                             @if ($message = Session::get('test'))
                             <div class="alert alert-success">
@@ -167,7 +167,7 @@
                                 </div>
                             </div>
                             <div>
-                                <div><a class="btn btn-primary btn-sm mt-2 float-start" href="/npc">Return</a>
+                                <div><a class="btn btn-primary btn-sm mt-2 float-start" href="/mob">Return</a>
                                 <button class="btn btn-primary btn-sm mt-2 float-end" type="submit">Submit</button>
                                 </div>
                             </div>
