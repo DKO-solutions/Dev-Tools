@@ -11,6 +11,9 @@
                     {{ Session::get('test') }}
                 </div>
                 @endif
+                <div class="float-end">
+                <a class="btn btn-dark" href="/mob/create">Create</a>
+                </div>
                 <table id="myTable" class="table table-dark table-striped table-hover">
                     <thead>
                         <tr>

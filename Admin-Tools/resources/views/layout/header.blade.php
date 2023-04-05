@@ -28,11 +28,8 @@
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="/npc">Find NPC</a></li>
-            <li><a class="dropdown-item" href="/npc/create">Create NPC</a></li>
             <li><a class="dropdown-item" href="/mob">Find MOB</a></li>
-            <li><a class="dropdown-item" href="/mob/create">Create MOB</a></li>
             <li><a class="dropdown-item" href="/pos">NPC POS</a></li>
-            <li><a class="dropdown-item" href="/pos/create">Create POS</a></li>
           </ul>
         </li>
         <li class="nav-item">
