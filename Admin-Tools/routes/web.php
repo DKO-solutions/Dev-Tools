@@ -36,7 +36,7 @@ Route::controller(HomeController::class)->group(function (){
 
 Route::controller(PagesController::class)->group(function (){
     Route::get('/npc', 'npc_view')->middleware('admin');
-    Route::get('/test', 'test')->middleware('admin');
+    Route::get('/test', 'test');
     Route::get('/npc/edit/{id}', 'npc_edit')->middleware('admin');
     Route::post('/npc/update/{id}', 'npc_update')->middleware('admin')->name('npc.edit');
     Route::get('/npc/create', 'npc_create')->middleware('admin');
